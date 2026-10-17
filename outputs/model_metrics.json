@@ -1,0 +1,60 @@
+{
+  "melhor_modelo": "LinearSVC",
+  "resultados": {
+    "LogisticRegression": {
+      "val_accuracy": 0.8573709419904204,
+      "val_f1_macro": 0.8309790955507693,
+      "test_accuracy": 0.8503978779840848,
+      "test_f1_macro": 0.8189088332404071
+    },
+    "RandomForest": {
+      "val_accuracy": 0.7876530069185738,
+      "val_f1_macro": 0.7526312235778105,
+      "test_accuracy": 0.7702917771883289,
+      "test_f1_macro": 0.7206896534055682
+    },
+    "LinearSVC": {
+      "val_accuracy": 0.863225119744545,
+      "val_f1_macro": 0.8351673118568782,
+      "test_accuracy": 0.8530503978779841,
+      "test_f1_macro": 0.8214540739600741
+    }
+  },
+  "labels": [
+    "Ensino Fundamental I",
+    "Ensino Fundamental II",
+    "Ensino Médio",
+    "Ensino Superior"
+  ],
+  "confusion_matrix_test": [
+    [
+      194,
+      16,
+      19,
+      2
+    ],
+    [
+      47,
+      197,
+      32,
+      12
+    ],
+    [
+      14,
+      26,
+      462,
+      62
+    ],
+    [
+      4,
+      5,
+      38,
+      755
+    ]
+  ],
+  "n_instancias": {
+    "train": 8722,
+    "val": 1879,
+    "test": 1885
+  }
+}

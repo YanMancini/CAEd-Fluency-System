@@ -1,0 +1,433 @@
+[
+  {
+    "operador": "troca_palavras",
+    "antes": "Os novos portugueses tomaram os postos de trabalho das pessoas que já moravam aqui e, para poder sustentar a Corte Portuguesa, os impostos aumentaram ainda mais. Em Pernambuco, esse “novo” poder foi a gota d’água. Os pernambucanos já queriam a independência e viviam se reunindo em lugares secretos, discutindo idéias e aumentando cada vez mais a vontade de ver sua região livre.",
+    "depois": "Os novos portugueses tomaram os postos de serviço das pessoas que já moravam aqui e, para poder sustentar a Corte Portuguesa, os impostos aumentaram ainda mais. Em Pernambuco, esse “novo” poder foi a gota d’água. Os pernambucanos já queriam a independência e viviam se reunindo em lugares secretos, discutindo idéias e aumentando cada vez mais a vontade de enxergar sua região livre.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: ver -> enxergar",
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Os novos portugueses tomaram os postos de trabalho das pessoas que já moravam aqui e, para poder sustentar a Corte Portuguesa, os impostos aumentaram ainda mais. Em Pernambuco, esse “novo” poder foi a gota d’água. Os pernambucanos já queriam a independência e viviam se reunindo em lugares secretos, discutindo idéias e aumentando cada vez mais a vontade de ver sua região livre.",
+    "depois": "Os novos portugueses tomaram os postos de serviço das pessoas que já moravam aqui e, para poder sustentar a Corte Portuguesa, os impostos aumentaram ainda mais. Em Pernambuco, esse “novo” poder foi a gota d’água. Os pernambucanos já queriam a independência e viviam se reunindo em lugares secretos, discutindo idéias e aumentando cada vez mais a vontade de enxergar sua região livre.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: ver -> enxergar",
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Podia ter xarope sabor de viagem espacial, xarope sabor de férias, até xarope sem sabor, com direito a sonho-surpresa. Claro que tinha que acertar bem a dose, senão o sonho podia virar pesadelo. Será que é por isso que ainda não inventaram nada desse tipo? Vou descobrir tudo isso quando eu crescer. ﻿ O Rio ainda tem que pedalar muito para tornar a bicicleta um eficiente meio de locomoção urbana.",
+    "depois": "Podia ter xarope sabor de viagem espacial, xarope sabor de férias, até xarope sem sabor, com direito a sonho-surpresa. Claro que tinha que acertar bem a dose, senão o sonho podia virar pesadelo. Será que é por isso que ainda não inventaram nada desse tipo? Vou descobrir tudo isso quando eu crescer. ﻿ O Rio ainda tem que pedalar bastante para tornar a bicicleta um eficiente meio de locomoção urbana.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: muito -> bastante"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Podia ter xarope sabor de viagem espacial, xarope sabor de férias, até xarope sem sabor, com direito a sonho-surpresa. Claro que tinha que acertar bem a dose, senão o sonho podia virar pesadelo. Será que é por isso que ainda não inventaram nada desse tipo? Vou descobrir tudo isso quando eu crescer. ﻿ O Rio ainda tem que pedalar muito para tornar a bicicleta um eficiente meio de locomoção urbana.",
+    "depois": "Podia ter xarope sabor de viagem espacial, xarope sabor de férias, até xarope sem sabor, com direito a sonho-surpresa. Claro que tinha que acertar bem a dose, senão o sonho podia virar pesadelo. Será que é por isso que ainda não inventaram nada desse tipo? Vou descobrir tudo isso quando eu crescer. ﻿ O Rio ainda tem que pedalar bastante para tornar a bicicleta um eficiente meio de locomoção urbana.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: muito -> bastante"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Entre os primeiros portugueses que chegaram ao Brasil naquela época, estavam os jesuítas, padres que vieram para cá com o objetivo de catequizar os índios. Um deles foi o padre Anchieta, que escreveu muitas peças teatrais, sempre com temas religiosos.",
+    "depois": "Entre os primeiros portugueses que chegaram ao Brasil naquela época, estavam os jesuítas, padres que vieram para cá com o objetivo de catequizar os índios. Um deles foi o padre Anchieta, que escreveu muitas peças teatrais, constantemente com temas religiosos.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: sempre -> constantemente"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Entre os primeiros portugueses que chegaram ao Brasil naquela época, estavam os jesuítas, padres que vieram para cá com o objetivo de catequizar os índios. Um deles foi o padre Anchieta, que escreveu muitas peças teatrais, sempre com temas religiosos.",
+    "depois": "Entre os primeiros portugueses que chegaram ao Brasil naquela época, estavam os jesuítas, padres que vieram para cá com o objetivo de catequizar os índios. Um deles foi o padre Anchieta, que escreveu muitas peças teatrais, constantemente com temas religiosos.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: sempre -> constantemente"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Insatisfeito com a vida restrita e focada na pesca que leva na lagoa onde cresceu, o golfinho desbrava o oceano na perseguição de seu sonho, sem deixar de encontrar amigos e perigos em sua busca. E, basicamente, é isso que acontece em O Golfinho: a história de um sonhador.",
+    "depois": "Insatisfeito com a vida restrita e focada na pesca que leva na lagoa onde cresceu, o golfinho desbrava o oceano na perseguição de seu sonho, sem deixar de encontrar amigos e perigos em sua busca. E, basicamente, é isso que acontece em O Golfinho: a narrativa de um sonhador.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: história -> narrativa"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Insatisfeito com a vida restrita e focada na pesca que leva na lagoa onde cresceu, o golfinho desbrava o oceano na perseguição de seu sonho, sem deixar de encontrar amigos e perigos em sua busca. E, basicamente, é isso que acontece em O Golfinho: a história de um sonhador.",
+    "depois": "Insatisfeito com a vida restrita e focada na pesca que leva na lagoa onde cresceu, o golfinho desbrava o oceano na perseguição de seu sonho, sem deixar de encontrar amigas e perigos em sua busca. E, basicamente, é isso que acontece em O Golfinho: a narrativa de um sonhador.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: história -> narrativa",
+      "amigos -> amigas"
+    ]
+  },
+  {
+    "operador": "troca_genero",
+    "antes": "Os textos falsos ou apócrifos (não autênticos) seguem na contramão da liberdade de expressão e dos direitos autorais, expondo profissionais a situações vexatórias, em que acabam sendo \"conhecidos\" de uma maneira pouco elegante e totalmente inadequada. Veja abaixo trechos de um artigo do escritor e diretor de cinema Arnaldo Jabor, que foi vítima desse golpe dos textos apócrifos mais de uma vez. ﻿ Você já provou o chimarrão?",
+    "depois": "Os textos falsos ou apócrifos (não autênticos) seguem na contramão da liberdade de expressão e dos direitos autorais, expondo profissionais a situações vexatórias, em que acabam sendo \"conhecidos\" de uma maneira pouco elegante e totalmente inadequada. Veja abaixo trechos de um artigo da escritora e diretora de cinema Arnaldo Jabor, que foi vítima desse golpe dos textos apócrifos mais de uma vez. ﻿ Você já provou o chimarrão?",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "escritor -> escritora",
+      "diretor -> diretora",
+      "do -> da"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Os textos falsos ou apócrifos (não autênticos) seguem na contramão da liberdade de expressão e dos direitos autorais, expondo profissionais a situações vexatórias, em que acabam sendo \"conhecidos\" de uma maneira pouco elegante e totalmente inadequada. Veja abaixo trechos de um artigo do escritor e diretor de cinema Arnaldo Jabor, que foi vítima desse golpe dos textos apócrifos mais de uma vez. ﻿ Você já provou o chimarrão?",
+    "depois": "Os textos falsos ou apócrifos (não autênticos) seguem na contramão da liberdade de expressão e dos direitos autorais, expondo profissionais a situações vexatórias, em que acabam sendo \"conhecidos\" de uma maneira pouco elegante e totalmente inadequada. Veja abaixo trechos de um artigo da escritora e diretora de cinema Arnaldo Jabor, que foi vítima desse golpe dos textos apócrifos mais de uma vez. ﻿ Você já provou o chimarrão?",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "escritor -> escritora",
+      "diretor -> diretora",
+      "do -> da"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Leia o quadro a seguir e fique por dentro! ﻿ Os seres humanos se comunicam por meio de diferentes linguagens: artes, como pintura, escultura, música, cinema, teatro; expressões do rosto e do corpo, como sorrir ou apontar com o dedo; e o idioma de sua comunidade linguística. De todas as linguagens, a língua de um povo talvez seja o meio mais complexo de comunicação. Ela não é apenas um conjunto de símbolos e regras.",
+    "depois": "Leia o quadro a seguir e fique por dentro! ﻿ Os seres humanos se comunicam por meio de diferentes linguagens: artes, como pintura, escultura, música, cinema, teatro; expressões do rosto e do corpo, como sorrir ou apontar com o dedo; e o idioma de sua comunidade linguística. De todas as linguagens, a língua de um povo possivelmente seja o meio mais complexo de comunicação. Ela não é apenas um conjunto de símbolos e regras.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: talvez -> possivelmente"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Leia o quadro a seguir e fique por dentro! ﻿ Os seres humanos se comunicam por meio de diferentes linguagens: artes, como pintura, escultura, música, cinema, teatro; expressões do rosto e do corpo, como sorrir ou apontar com o dedo; e o idioma de sua comunidade linguística. De todas as linguagens, a língua de um povo talvez seja o meio mais complexo de comunicação. Ela não é apenas um conjunto de símbolos e regras.",
+    "depois": "Leia o quadro a seguir e fique por dentro! ﻿ Os seres humanos se comunicam por meio de diferentes linguagens: artes, como pintura, escultura, música, cinema, teatro; expressões do rosto e do corpo, como sorrir ou apontar com o dedo; e o idioma de sua comunidade linguística. De todas as linguagens, a língua de um povo possivelmente seja o meio mais complexo de comunicação. Ela não é apenas um conjunto de símbolos e regras.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: talvez -> possivelmente"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Para os índios Guarani Mbya que vivem no Rio de Janeiro, as constelações têm nomes e histórias diferentes daquelas que conhecemos pela astronomia tradicional. É uma outra forma de olhar para o mesmo céu... Mas a astronomia não é apenas uma brincadeira de procurar formas conhecidas no céu.",
+    "depois": "Para os índios Guarani Mbya que vivem no Rio de Janeiro, as constelações têm nomes e narrativas diferentes daquelas que conhecemos pela astronomia tradicional. É uma outra forma de olhar para o mesmo céu... Mas a astronomia não é apenas uma brincadeira de procurar formas conhecidas no céu.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: histórias -> narrativas"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Para os índios Guarani Mbya que vivem no Rio de Janeiro, as constelações têm nomes e histórias diferentes daquelas que conhecemos pela astronomia tradicional. É uma outra forma de olhar para o mesmo céu... Mas a astronomia não é apenas uma brincadeira de procurar formas conhecidas no céu.",
+    "depois": "Para os índios Guarani Mbya que vivem no Rio de Janeiro, as constelações têm nomes e narrativas diferentes daquelas que conhecemos pela astronomia tradicional. É uma outra forma de olhar para o mesmo céu... Mas a astronomia não é apenas uma brincadeira de procurar formas conhecidas no céu.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: histórias -> narrativas"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Hoje, seus poemas podem ser lidos e ouvidos nos inúmeros livros e discos que Patativa publicou e gravou, como Inspiração nordestina (1956), Cantos de Patativa (1966), Cante lá que eu canto cá (1978). Patativa pode ser considerado um artista que soube realizar obra da mais alta qualidade na tradição folclórica e popular.",
+    "depois": "Hoje, seus poemas podem ser lidos e ouvidos nos inúmeros livros e discos que Patativa publicou e gravou, como Inspiração nordestina (1956), Cantos de Patativa (1966), Cante lá que eu canto cá (1978). Patativa pode ser considerado um artista que soube realizar obra da mais baixa qualidade na tradição folclórica e popular.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "antônimo: alta -> baixa"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Hoje, seus poemas podem ser lidos e ouvidos nos inúmeros livros e discos que Patativa publicou e gravou, como Inspiração nordestina (1956), Cantos de Patativa (1966), Cante lá que eu canto cá (1978). Patativa pode ser considerado um artista que soube realizar obra da mais alta qualidade na tradição folclórica e popular.",
+    "depois": "Hoje, seus poemas podem ser lidos e ouvidos nos inúmeros livros e discos que Patativa publicou e gravou, como Inspiração nordestina (1956), Cantos de Patativa (1966), Cante lá que eu canto cá (1978). Patativa pode ser considerado um artista que soube realizar obra da mais baixa qualidade na tradição folclórica e popular.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "antônimo: alta -> baixa"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "O esforço e o talento do poeta tornam merecidíssima a bela festa que sua cidade natal lhe fez, quando ele completou noventa anos: houve música, cantoria e inauguração de um memorial em sua homenagem.",
+    "depois": "O esforço e o talento da poetisa tornam merecidíssima a bela celebração que sua cidade natal lhe fez, quando ela completou noventa anos: houve música, cantoria e inauguração de um memorial em sua homenagem.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: festa -> celebração",
+      "poeta -> poetisa",
+      "do -> da",
+      "ele -> ela"
+    ]
+  },
+  {
+    "operador": "troca_genero",
+    "antes": "Por isso, sempre há risco de uma nova guerra. Os EUA acusam a Coréia do Norte de ameaçar seus vizinhos. Ao explodir a bomba, o país está violando um acordo que proíbe esse tipo de teste. Por isso, vários países acham que a Coréia do Norte deve ser castigada.",
+    "depois": "Por isso, sempre há risco de uma nova guerra. Os EUA acusam a Coréia do Norte de ameaçar suas vizinhas. Ao explodir a bomba, o país está violando um acordo que proíbe esse tipo de teste. Por isso, vários países acham que a Coréia do Norte deve ser castigada.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "vizinhos -> vizinhas",
+      "seus -> suas"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Por isso, sempre há risco de uma nova guerra. Os EUA acusam a Coréia do Norte de ameaçar seus vizinhos. Ao explodir a bomba, o país está violando um acordo que proíbe esse tipo de teste. Por isso, vários países acham que a Coréia do Norte deve ser castigada.",
+    "depois": "Por isso, sempre há risco de uma velha guerra. Os EUA acusam a Coréia do Norte de ameaçar suas vizinhas. Ao explodir a bomba, o país está violando um acordo que proíbe esse tipo de teste. Por isso, vários países acham que a Coréia do Norte deve ser castigada.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "antônimo: nova -> velha",
+      "vizinhos -> vizinhas",
+      "seus -> suas"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Não é muito fácil responder a essa pergunta... Depois do descobrimento do Brasil, em 1500, nosso país tornou-se colônia de Portugal. Como colônia, tinha de respeitar um trato chamado \"pacto colonial\", que sempre foi o grande motivo dos conflitos. Esse pacto dizia que a colônia devia obedecer à metrópole em tudo, sem reclamar.",
+    "depois": "Não é bastante fácil responder a essa pergunta... Posteriormente do descobrimento do Brasil, em 1500, nosso país tornou-se colônia de Portugal. Como colônia, tinha de respeitar um trato chamado \"pacto colonial\", que sempre foi o grande motivo dos conflitos. Esse pacto dizia que a colônia devia obedecer à metrópole em tudo, sem reclamar.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: Depois -> Posteriormente",
+      "sinônimo: muito -> bastante"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Não é muito fácil responder a essa pergunta... Depois do descobrimento do Brasil, em 1500, nosso país tornou-se colônia de Portugal. Como colônia, tinha de respeitar um trato chamado \"pacto colonial\", que sempre foi o grande motivo dos conflitos. Esse pacto dizia que a colônia devia obedecer à metrópole em tudo, sem reclamar.",
+    "depois": "Não é bastante fácil responder a essa pergunta... Posteriormente do descobrimento do Brasil, em 1500, nosso país tornou-se colônia de Portugal. Como colônia, tinha de respeitar um trato chamado \"pacto colonial\", que sempre foi o grande motivo dos conflitos. Esse pacto dizia que a colônia devia obedecer à metrópole em tudo, sem reclamar.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: Depois -> Posteriormente",
+      "sinônimo: muito -> bastante"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "A embalagem dos produtos é a roupa daquilo que estamos comprando. Ela nos mostra uma série de coisas: o preço, se o produto é de comer ou para outro uso, se é novo ou velho, natural ou artificial, nacional ou importado, se respeita o meio ambiente.",
+    "depois": "A embalagem dos produtos é a roupa daquilo que estamos comprando. Ela nos mostra uma série de coisas: o preço, se o produto é de comer ou para outro uso, se é novo ou novo, natural ou artificial, nacional ou importado, se respeita o meio ambiente.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Superior",
+    "mudancas": [
+      "antônimo: velho -> novo"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "A embalagem dos produtos é a roupa daquilo que estamos comprando. Ela nos mostra uma série de coisas: o preço, se o produto é de comer ou para outro uso, se é novo ou velho, natural ou artificial, nacional ou importado, se respeita o meio ambiente.",
+    "depois": "A embalagem dos produtos é a roupa daquilo que estamos comprando. Ela nos mostra uma série de coisas: o preço, se o produto é de comer ou para outro uso, se é novo ou novo, natural ou artificial, nacional ou importado, se respeita o meio ambiente.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Superior",
+    "mudancas": [
+      "antônimo: velho -> novo"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "As células da medula sadia são implantadas via transfusão sanguínea, por meio do cateter venoso, instalado em uma veia de grande calibre do paciente. É também por este que o paciente recebe a quimioterapia e medicamentos. As células sadias se instalam, posteriormente, no interior dos ossos, e lá se multiplicam e se diferenciam em células sanguíneas. Até estabelecer um equilíbrio ótimo destas células, o transplantado deve ingerir antibióticos, para evitar infecções, e receber doações de sangue compatível.",
+    "depois": "As células da medula sadia são implantadas via transfusão sanguínea, por meio do cateter venoso, instalado em uma veia de grande calibre do paciente. É também por este que o paciente recebe a quimioterapia e remédios. As células sadias se instalam, posteriormente, no interior dos ossos, e lá se multiplicam e se diferenciam em células sanguíneas. Até estabelecer um equilíbrio ótimo destas células, o transplantado deve ingerir antibióticos, para evitar infecções, e receber doações de sangue compatível.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: medicamentos -> remédios"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "As células da medula sadia são implantadas via transfusão sanguínea, por meio do cateter venoso, instalado em uma veia de grande calibre do paciente. É também por este que o paciente recebe a quimioterapia e medicamentos. As células sadias se instalam, posteriormente, no interior dos ossos, e lá se multiplicam e se diferenciam em células sanguíneas. Até estabelecer um equilíbrio ótimo destas células, o transplantado deve ingerir antibióticos, para evitar infecções, e receber doações de sangue compatível.",
+    "depois": "As células da medula sadia são implantadas via transfusão sanguínea, por meio do cateter venoso, instalado em uma veia de grande calibre do paciente. É também por este que o paciente recebe a quimioterapia e remédios. As células sadias se instalam, posteriormente, no interior dos ossos, e lá se multiplicam e se diferenciam em células sanguíneas. Até estabelecer um equilíbrio ótimo destas células, o transplantado deve ingerir antibióticos, para evitar infecções, e receber doações de sangue compatível.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: medicamentos -> remédios"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Sim, éramos a favor da enchente, ficávamos tristes de manhãzinha quando, mal saltando da cama, íamos correndo para ver que o rio baixara um palmo - aquilo era uma traição, uma fraqueza do Itapemirim. Às vezes chegava alguém a cavalo, dizia que lá, para cima do Castelo, tinha caído chuva muita, anunciava águas nas cabeceiras, então dormíamos sonhando que a enchente ia outra vez crescer, queríamos sempre que aquela fosse a maior de todas as enchentes. BRAGA, Rubem.",
+    "depois": "Sim, éramos a favor da enchente, ficávamos tristes de manhãzinha quando, mal saltando da cama, íamos correndo para ver que o rio baixara um palmo - aquilo era uma traição, uma fraqueza do Itapemirim. Às vezes chegava alguém a cavalo, dizia que lá, para cima do Castelo, tinha caído chuva bastante, anunciava águas nas cabeceiras, então dormíamos sonhando que a enchente ia outra vez crescer, queríamos constantemente que aquela fosse a maior de todas as enchentes. BRAGA, Rubem.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: sempre -> constantemente",
+      "sinônimo: muita -> bastante"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Sim, éramos a favor da enchente, ficávamos tristes de manhãzinha quando, mal saltando da cama, íamos correndo para ver que o rio baixara um palmo - aquilo era uma traição, uma fraqueza do Itapemirim. Às vezes chegava alguém a cavalo, dizia que lá, para cima do Castelo, tinha caído chuva muita, anunciava águas nas cabeceiras, então dormíamos sonhando que a enchente ia outra vez crescer, queríamos sempre que aquela fosse a maior de todas as enchentes. BRAGA, Rubem.",
+    "depois": "Sim, éramos a favor da enchente, ficávamos tristes de manhãzinha quando, mal saltando da cama, íamos correndo para ver que o rio baixara um palmo - aquilo era uma traição, uma fraqueza do Itapemirim. Às vezes chegava alguém o égua, dizia que lá, para cima do Castelo, tinha caído chuva bastante, anunciava águas nas cabeceiras, então dormíamos sonhando que a enchente ia outra vez crescer, queríamos constantemente que aquela fosse a maior de todas as enchentes. BRAGA, Rubem.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "sinônimo: sempre -> constantemente",
+      "sinônimo: muita -> bastante",
+      "cavalo -> égua",
+      "a -> o"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Quem pratica atividade física, dorme mais rápido, consegue relaxar e descansa, tem um sono mais profundo, menos fragmentado e de qualidade, se sente disposto, se concentra com maior facilidade possuindo melhor rendimento, emagrece e obtém melhora na qualidade do sono e, consequentemente, na qualidade de vida.",
+    "depois": "Quem pratica atividade física, dorme mais lento, consegue relaxar e descansa, tem um sono mais profundo, menos fragmentado e de qualidade, se sente disposto, se concentra com maior facilidade possuindo melhor rendimento, emagrece e obtém melhora na qualidade do sono e, consequentemente, na qualidade de vida.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "antônimo: rápido -> lento"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Quem pratica atividade física, dorme mais rápido, consegue relaxar e descansa, tem um sono mais profundo, menos fragmentado e de qualidade, se sente disposto, se concentra com maior facilidade possuindo melhor rendimento, emagrece e obtém melhora na qualidade do sono e, consequentemente, na qualidade de vida.",
+    "depois": "Quem pratica atividade física, dorme mais lento, consegue relaxar e descansa, tem um sono mais profundo, menos fragmentado e de qualidade, se sente disposto, se concentra com maior facilidade possuindo melhor rendimento, emagrece e obtém melhora na qualidade do sono e, consequentemente, na qualidade de vida.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "antônimo: rápido -> lento"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "A busca pela diminuição dos custos e pelo aumento na eficácia da produção estimulou o surgimento de máquinas que automatizavam o trabalho manual de centenas de homens, mulheres e crianças.",
+    "depois": "A busca pela diminuição dos custos e pelo aumento na eficácia da produção estimulou o surgimento de máquinas que automatizavam o serviço manual de centenas de homens, mulheres e crianças.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Superior",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "A busca pela diminuição dos custos e pelo aumento na eficácia da produção estimulou o surgimento de máquinas que automatizavam o trabalho manual de centenas de homens, mulheres e crianças.",
+    "depois": "A busca pela diminuição dos custos e pelo aumento na eficácia da produção estimulou o surgimento de máquinas que automatizavam o serviço manual de centenas de mulheres, homens e crianças.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Superior",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço",
+      "homens -> mulheres",
+      "mulheres -> homens"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Alguns atribuem o nome ao termo italiano giornale (de giorno: dia); outros defendem que a palavra veio do latim diurnale (relativo a dia, diário), A princípio a palavra jornal designava a remuneração salarial feita por dia de trabalho, e jornaleiro era um trabalhador que recebia por dia, que era pago com o \"jornal\". Bullying é arma para ganhar popularidade. Jairo Bouer.",
+    "depois": "Alguns atribuem o nome ao termo italiano giornale (de giorno: dia); outros defendem que a palavra veio do latim diurnale (relativo a dia, diário), A princípio a palavra jornal designava a remuneração salarial feita por dia de serviço, e jornaleiro era um trabalhador que recebia por dia, que era pago com o \"jornal\". Bullying é arma para ganhar popularidade. Jairo Bouer.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Alguns atribuem o nome ao termo italiano giornale (de giorno: dia); outros defendem que a palavra veio do latim diurnale (relativo a dia, diário), A princípio a palavra jornal designava a remuneração salarial feita por dia de trabalho, e jornaleiro era um trabalhador que recebia por dia, que era pago com o \"jornal\". Bullying é arma para ganhar popularidade. Jairo Bouer.",
+    "depois": "Alguns atribuem o nome ao termo italiano giornale (de giorno: dia); outros defendem que a palavra veio do latim diurnale (relativo a dia, diário), A princípio a palavra jornal designava a remuneração salarial feita por dia de serviço, e jornaleiro era um trabalhador que recebia por dia, que era pago com o \"jornal\". Bullying é arma para ganhar popularidade. Jairo Bouer.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Dadas as características das línguas semíticas, não era muito importante escrever as vogais, sendo as palavras facilmente reconhecidas apenas pelas consoantes, como encontramos até hoje num dos modos como se podem escrever o árabe e o hebraico. Os gregos adaptaram o sistema de escrita fenícia, ao qual juntaram as vogais, uma vez que, em grego as vogais tem uma função linguística muito importante na formação e no reconhecimento de palavras.",
+    "depois": "Dadas as características das línguas semíticas, não era muito importante escrever as vogais, sendo as palavras facilmente reconhecidas apenas pelas consoantes, como encontramos até hoje num dos modos como se podem escrever o árabe e o hebraico. Os gregos adaptaram o sistema de escrita fenícia, ao qual juntaram as vogais, uma vez que, em grego as vogais tem uma função linguística bastante essencial na formação e no reconhecimento de palavras.",
+    "classe_antes": "Ensino Superior",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: muito -> bastante",
+      "sinônimo: importante -> essencial"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Dadas as características das línguas semíticas, não era muito importante escrever as vogais, sendo as palavras facilmente reconhecidas apenas pelas consoantes, como encontramos até hoje num dos modos como se podem escrever o árabe e o hebraico. Os gregos adaptaram o sistema de escrita fenícia, ao qual juntaram as vogais, uma vez que, em grego as vogais tem uma função linguística muito importante na formação e no reconhecimento de palavras.",
+    "depois": "Dadas as características das línguas semíticas, não era muito importante escrever as vogais, sendo as palavras facilmente reconhecidas apenas pelas consoantes, como encontramos até hoje num dos modos como se podem escrever o árabe e o hebraico. Os gregos adaptaram o sistema de escrita fenícia, ao qual juntaram as vogais, uma vez que, em grego as vogais tem uma função linguística bastante essencial na formação e no reconhecimento de palavras.",
+    "classe_antes": "Ensino Superior",
+    "classe_depois": "Ensino Fundamental I",
+    "mudancas": [
+      "sinônimo: muito -> bastante",
+      "sinônimo: importante -> essencial"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "A data é, atualmente, o “Dia da Consciência Negra” porque, para muitos brasileiros, a abolição dos escravos começou a acontecer muito antes do século XIX. E não tem a cara da Princesa Isabel. Por Ricardo Arnt e Ricardo Bonalume Neto. A escravidão no Brasil foi oficialmente abolida no dia 13 de maio de 1888, por uma lei que levava a assinatura da Princesa Isabel.",
+    "depois": "A data é, atualmente, o “Dia da Consciência Negra” porque, para bastantes brasileiros, a abolição dos escravos começou a acontecer muito anteriormente do século XIX. E não tem a cara da Princesa Isabel. Por Ricardo Arnt e Ricardo Bonalume Neto. A escravidão no Brasil foi oficialmente abolida no dia 13 de maio de 1888, por uma lei que levava a assinatura da Princesa Isabel.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: muitos -> bastantes",
+      "sinônimo: antes -> anteriormente"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "A data é, atualmente, o “Dia da Consciência Negra” porque, para muitos brasileiros, a abolição dos escravos começou a acontecer muito antes do século XIX. E não tem a cara da Princesa Isabel. Por Ricardo Arnt e Ricardo Bonalume Neto. A escravidão no Brasil foi oficialmente abolida no dia 13 de maio de 1888, por uma lei que levava a assinatura da Princesa Isabel.",
+    "depois": "A data é, atualmente, o “Dia da Consciência Negra” porque, para bastantes brasileiros, a abolição dos escravos começou a acontecer muito anteriormente do século XIX. E não tem a cara do Príncipe Isabel. Por Ricardo Arnt e Ricardo Bonalume Neta. A escravidão no Brasil foi oficialmente abolida no dia 13 de maio de 1888, por uma lei que levava a assinatura do Príncipe Isabel.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: muitos -> bastantes",
+      "sinônimo: antes -> anteriormente",
+      "Princesa -> Príncipe",
+      "da -> do",
+      "Neto -> Neta",
+      "Princesa -> Príncipe"
+    ]
+  },
+  {
+    "operador": "troca_genero",
+    "antes": "Na primeira vez que deixou a Febem para ganhar a rua, aos 14 anos, Silva foi trabalhar no Juizado de Menores de São Paulo, onde teve acesso ao seu arquivo. “Foi nessa ocasião que tive consciência da minha situação”, diz Silva. “Percebi que não tinha sido abandonado por meus pais, mas que fora confiscado pelo Estado. Isso deu uma indignação… uma indignação que viraria a palavra-chave da minha vida.” Não à toa.",
+    "depois": "Na primeira vez que deixou a Febem para ganhar a rua, aos 14 anos, Silva foi trabalhar no Juizado de Menores de São Paulo, onde teve acesso ao seu arquivo. “Foi nessa ocasião que tive consciência da minha situação”, diz Silva. “Percebi que não tinha sido abandonado por minhas mães, mas que fora confiscada pelo Estado. Isso deu uma indignação… uma indignação que viraria a palavra-chave da minha vida.” Não à toa.",
+    "classe_antes": "Ensino Fundamental I",
+    "classe_depois": "Ensino Fundamental II",
+    "mudancas": [
+      "pais -> mães",
+      "meus -> minhas",
+      "confiscado -> confiscada"
+    ]
+  },
+  {
+    "operador": "troca_palavras",
+    "antes": "Com o esvaziamento desse primeiro movimento, a geração hippie deu lugar a uma juventude mais conservadora que não mais se simpatizava com a ação transgressora da geração anterior. Os chamados yuppies da década de 1980, mediante a expansão do capitalismo e a competitividade do mercado de trabalho, começaram a estudar cada vez mais cedo, buscando uma carreira profissional proeminente acompanhada do tão sonhado conforto material.",
+    "depois": "Com o esvaziamento desse primeiro movimento, a geração hippie deu lugar a uma juventude mais conservadora que não mais se simpatizava com a ação transgressora da geração anterior. Os chamados yuppies da década de 1980, mediante a expansão do capitalismo e a competitividade do mercado de serviço, começaram a estudar cada vez mais cedo, buscando uma carreira profissional proeminente acompanhada do tão sonhado conforto material.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço"
+    ]
+  },
+  {
+    "operador": "todas",
+    "antes": "Com o esvaziamento desse primeiro movimento, a geração hippie deu lugar a uma juventude mais conservadora que não mais se simpatizava com a ação transgressora da geração anterior. Os chamados yuppies da década de 1980, mediante a expansão do capitalismo e a competitividade do mercado de trabalho, começaram a estudar cada vez mais cedo, buscando uma carreira profissional proeminente acompanhada do tão sonhado conforto material.",
+    "depois": "Com o esvaziamento desse primeiro movimento, a geração hippie deu lugar a uma juventude mais conservadora que não mais se simpatizava com a ação transgressora da geração anterior. Os chamados yuppies da década de 1980, mediante a expansão do capitalismo e a competitividade do mercado de serviço, começaram a estudar cada vez mais cedo, buscando uma carreira profissional proeminente acompanhada do tão sonhado conforto material.",
+    "classe_antes": "Ensino Fundamental II",
+    "classe_depois": "Ensino Médio",
+    "mudancas": [
+      "sinônimo: trabalho -> serviço"
+    ]
+  }
+]

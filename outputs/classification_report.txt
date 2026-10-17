@@ -1,0 +1,19 @@
+Modelo escolhido: LinearSVC
+
+                       precision    recall  f1-score   support
+
+ Ensino Fundamental I      0.749     0.840     0.792       231
+Ensino Fundamental II      0.807     0.684     0.741       288
+         Ensino Médio      0.838     0.819     0.829       564
+      Ensino Superior      0.909     0.941     0.925       802
+
+             accuracy                          0.853      1885
+            macro avg      0.826     0.821     0.821      1885
+         weighted avg      0.853     0.853     0.852      1885
+
+Matriz de confusão (linhas=real, colunas=previsto):
+['Ensino Fundamental I', 'Ensino Fundamental II', 'Ensino Médio', 'Ensino Superior']
+[[194  16  19   2]
+ [ 47 197  32  12]
+ [ 14  26 462  62]
+ [  4   5  38 755]]

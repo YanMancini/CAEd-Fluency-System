@@ -1,0 +1,5 @@
+operador,textos,textos_alterados,porcentagem_alterados,porcentagem_mudou_classe(entre alterados),subiu_nivel,desceu_nivel,delta_score_medio,delta_score_abs_medio
+troca_palavras,1885,1284,68.1,2.4,19,12,0.0064,0.0245
+troca_genero,1885,303,16.1,1.3,3,1,0.0035,0.0294
+parafrase,1885,12,0.6,0.0,0,0,0.0038,0.0079
+todas,1885,1337,70.9,2.5,22,12,0.0071,0.0277

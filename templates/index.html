@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAEd · Complexidade textual e mutações</title>
+<style>
+  :root{
+    --bg:#ffffff; --card:#ffffff; --fg:#111111; --muted:#6b6b6b;
+    --line:#111111;            /* linhas finas pretas */
+    --accent:#ffee00;          /* primária / destaque (amarelo) */
+    --accent-soft:#fff9a8;     /* amarelo suave p/ trechos alterados */
+    --gray:#f2f2f2;            /* terciária (cinza claro) */
+    --gray-mid:#d9d9d9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{padding:28px 16px 12px;max-width:960px;margin:0 auto}
+  h1{font-size:1.35rem;font-weight:600;letter-spacing:-.01em;margin:0 0 6px;
+    display:inline-block;background:linear-gradient(transparent 62%,var(--accent) 62%)}
+  header p{margin:0;color:var(--muted);font-size:.92rem;max-width:70ch}
+  main{max-width:960px;margin:0 auto;padding:8px 16px 56px;display:grid;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:0;padding:18px}
+  .card h2{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+    margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  textarea{width:100%;min-height:140px;resize:vertical;padding:12px;border-radius:0;
+    border:1px solid var(--line);background:var(--gray);color:var(--fg);font:inherit}
+  textarea:focus{outline:none;background:#fff;box-shadow:0 0 0 3px var(--accent)}
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+  button{font:inherit;font-size:.9rem;border:1px solid var(--line);background:#fff;color:var(--fg);
+    padding:7px 14px;border-radius:0;cursor:pointer;transition:background .12s}
+  button:hover{background:var(--gray)}
+  button.primary{background:var(--accent);font-weight:600}
+  button.primary:hover{background:#ffe100}
+  button:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent)}
+  button:disabled{opacity:.6;cursor:wait}
+  .muted{color:var(--muted);font-size:.88rem}
+  .spacer{flex:1}
+  label.seed{display:flex;gap:6px;align-items:center;font-size:.88rem;color:var(--muted)}
+  label.seed input{width:70px;padding:5px 6px;border-radius:0;border:1px solid var(--line);
+    background:var(--gray);color:var(--fg)}
+  .err{color:var(--fg);font-weight:600;margin-top:8px;min-height:1.2em}
+  .err:not(:empty){border-left:4px solid var(--accent);background:var(--gray);padding:6px 10px}
+  .badge{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:0;
+    background:var(--accent);color:var(--fg);font-weight:600;font-size:.88rem}
+  .badge.changed{background:var(--fg);color:var(--accent)}
+  .probs{display:grid;gap:7px;margin-top:12px}
+  .prob{display:grid;grid-template-columns:150px 1fr 48px;gap:10px;align-items:center;font-size:.85rem}
+  .prob .track{height:10px;background:var(--gray);border:1px solid var(--line);border-radius:0}
+  .prob .fill{height:100%;background:var(--gray-mid)}
+  .prob.top .fill{background:var(--accent);border-right:1px solid var(--line)}
+  .prob.top span:first-child{font-weight:600}
+  .feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:14px}
+  .feat div{background:var(--gray);border:1px solid var(--line);border-radius:0;padding:8px 10px}
+  .feat b{display:block;font-size:1.05rem}
+  .feat span{font-size:.75rem;color:var(--muted)}
+  .tabs{display:flex;flex-wrap:wrap;gap:0;margin-bottom:14px;border-bottom:1px solid var(--line)}
+  .tabs button{border:1px solid var(--line);border-bottom:none;margin-right:-1px;background:var(--gray)}
+  .tabs button[aria-selected="true"]{background:var(--accent);font-weight:600}
+  .texto{white-space:pre-wrap;background:var(--gray);border:1px solid var(--line);border-radius:0;
+    padding:12px;margin:12px 0}
+  mark{background:var(--accent);color:var(--fg);border-radius:0;padding:0 2px}
+  ul.chg{margin:6px 0 0;padding-left:20px;font-size:.88rem}
+  .delta{font-weight:600}
+  .delta.up::before{content:"▲ "} .delta.down::before{content:"▼ "}
+  .hidden{display:none}
+  @media (max-width:560px){ .prob{grid-template-columns:110px 1fr 44px} }
+</style>
+</head>
+<body>
+<header>
+  <h1>Complexidade textual e mutação de textos</h1>
+  <p>Classifica um trecho em Fundamental I, Fundamental II, Médio ou Superior, aplica mutações
+     (troca de palavras, troca de gênero, paráfrase) e mostra o impacto na classe prevista.</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Texto de entrada</h2>
+    <textarea id="texto" placeholder="Cole ou digite um texto (ideal: até ~80 palavras)…"></textarea>
+    <div class="row">
+      <button class="primary" id="btn">Analisar</button>
+      <button id="ex1" type="button">Exemplo simples</button>
+      <button id="ex2" type="button">Exemplo formal</button>
+      <span class="spacer"></span>
+      <label class="seed">semente <input id="seed" type="number" value="42"></label>
+      <span class="muted" id="cont">0 palavras</span>
+    </div>
+    <div class="err" id="err" role="alert"></div>
+  </section>
+
+  <section class="card hidden" id="resOrig">
+    <h2>Classificação do texto original</h2>
+    <span class="badge" id="origClasse"></span>
+    <span class="muted">&nbsp;nível esperado: <b id="origScore"></b> (0 = Fund. I … 3 = Superior)</span>
+    <div class="probs" id="origProbs"></div>
+    <div class="feat" id="origFeat"></div>
+  </section>
+
+  <section class="card hidden" id="resMut">
+    <h2>Mutações e impacto</h2>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="mutBody"></div>
+  </section>
+</main>
+
+<script>
+const NOMES = {troca_palavras:"Troca de palavras", troca_genero:"Troca de gênero",
+               parafrase:"Paráfrase", todas:"Todas em sequência"};
+const FEAT = {pct_canonicas:"% canônicas", tam_medio_palavra:"tam. médio de palavra",
+  tam_medio_frase:"tam. médio de frase", densidade_lexical:"densidade lexical",
+  vocabulario:"vocabulário", ttr:"type-token ratio", pct_palavras_longas:"% palavras longas",
+  virgulas_por_frase:"vírgulas/frase", n_palavras:"nº de palavras"};
+const EX = {
+  ex1:"A cantora era famosa. O texto foi lido pelo aluno. O menino bonito disse que a casa era grande e queria um carro novo.",
+  ex2:"A implementação de políticas públicas eficazes pressupõe a articulação entre diferentes esferas governamentais, bem como a participação ativa da sociedade civil na fiscalização dos recursos."
+};
+const $ = id => document.getElementById(id);
+let dados = null, ativa = "troca_palavras";
+
+const nPal = s => (s.trim().match(/\S+/g) || []).length;
+$("texto").addEventListener("input", () => $("cont").textContent = nPal($("texto").value) + " palavras");
+for (const k of ["ex1","ex2"]) $(k).onclick = () => { $("texto").value = EX[k]; $("texto").dispatchEvent(new Event("input")); };
+$("texto").addEventListener("keydown", e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) analisar(); });
+$("btn").onclick = analisar;
+
+async function analisar(){
+  $("err").textContent = "";
+  const texto = $("texto").value;
+  $("btn").disabled = true; $("btn").textContent = "Analisando…";
+  try{
+    const r = await fetch("/api/analisar", {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({texto, seed: $("seed").value})});
+    const j = await r.json();
+    if(!r.ok) throw new Error(j.erro || "Erro ao analisar o texto.");
+    dados = j; render();
+  }catch(e){ $("err").textContent = e.message; }
+  finally{ $("btn").disabled = false; $("btn").textContent = "Analisar"; }
+}
+
+function probsHtml(probs, top){
+  return Object.entries(probs).map(([l,v]) =>
+    `<div class="prob ${l===top?'top':''}"><span>${l}</span>
+     <div class="track"><div class="fill" style="width:${(v*100).toFixed(1)}%"></div></div>
+     <span>${(v*100).toFixed(0)}%</span></div>`).join("");
+}
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function render(){
+  const o = dados.original;
+  $("resOrig").classList.remove("hidden"); $("resMut").classList.remove("hidden");
+  $("origClasse").textContent = o.classe;
+  $("origScore").textContent = o.score.toFixed(2);
+  $("origProbs").innerHTML = probsHtml(o.probs, o.classe);
+  $("origFeat").innerHTML = Object.entries(o.atributos).map(([k,v]) =>
+    `<div><b>${v}</b><span>${FEAT[k] || k}</span></div>`).join("");
+  $("tabs").innerHTML = Object.keys(dados.mutacoes).map(op =>
+    `<button role="tab" data-op="${op}" aria-selected="${op===ativa}">${NOMES[op]||op}</button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => { ativa = b.dataset.op; render(); });
+  renderMut();
+}
+
+function renderMut(){
+  const m = dados.mutacoes[ativa], o = dados.original;
+  if(!m.alterou){
+    $("mutBody").innerHTML = `<p class="muted">Nenhuma regra desse operador se aplicou ao texto (o texto ficou igual).</p>`;
+    return;
+  }
+  const html = m.segmentos.map(s => s.mudou ? `<mark>${esc(s.t)}</mark>` : esc(s.t)).join("");
+  const dir = m.delta > 0 ? "up" : (m.delta < 0 ? "down" : "");
+  const sinal = m.delta > 0 ? "+" : "";
+  $("mutBody").innerHTML = `
+    <div>
+      <span class="badge ${m.mudou_classe?'changed':''}">${m.classe}</span>
+      ${m.mudou_classe ? `<span class="muted">&nbsp;mudou de <b>${o.classe}</b></span>` : `<span class="muted">&nbsp;classe mantida</span>`}
+      <span class="muted">&nbsp;· nível esperado ${m.score.toFixed(2)}
+        (<span class="delta ${dir}">${sinal}${m.delta.toFixed(3)}</span>)</span>
+    </div>
+    <div class="texto">${html}</div>
+    <div class="probs">${probsHtml(m.probs, m.classe)}</div>
+    ${m.mudancas.length ? `<p class="muted" style="margin-bottom:0">Alterações aplicadas:</p>
+      <ul class="chg">${m.mudancas.map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}`;
+}
+</script>
+</body>
+</html>
