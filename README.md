@@ -1,4 +1,4 @@
-# CAEd · Complexidade textual e mutação de textos narrativos
+# · Complexidade textual e mutação de textos narrativos
 
 Sistema desenvolvido para o processo de seleção do CAEd (Prova 024/2026). Ele:
 
